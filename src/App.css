@@ -1,5 +1,12 @@
+:root {
+  --header-height: 62px;
+}
+
 .App {
   text-align: center;
+  background-color: #ebd6ab;
+  height: calc(100vh);
+      font-family: "Clarkson";
 }
 
 .App-logo {
@@ -35,4 +42,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.name-button {
+  width: 150px;
+  height: 40px;
+  background-color: transparent;
+  /* opacity: 50%; */
+  border: none;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+.name-button:hover {
+  cursor:pointer;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - var(--header-height) - 1px);
 }
